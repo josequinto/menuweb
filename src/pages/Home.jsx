@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import { FaInstagram, FaFacebook } from "react-icons/fa";
+import { FaInstagram, FaFacebook,  FaMapMarkerAlt } from "react-icons/fa";
 import { ImWhatsapp } from "react-icons/im";
 
 export default function Home() {
@@ -15,6 +15,7 @@ export default function Home() {
         <ImWhatsapp />
         <FaFacebook />
         <FaInstagram />
+        <FaMapMarkerAlt />
       </div>
     </div>
   );
