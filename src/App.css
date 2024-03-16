@@ -1,0 +1,205 @@
+:root {
+  --color-fondo: #fefae0;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--color-fondo);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-fondo);
+}
+#navbar h1 {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin: 10px 0;
+}
+#navbar svg {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+#navbar-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100dvw;
+  height: 100dvh;
+  background-color: darkcyan;
+}
+#navbar-modal h1 {
+  text-align: right;
+  color: var(--color-fondo);
+  margin-right: 15px;
+}
+#navbar-modal-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  gap: 30px;
+}
+#navbar-modal-links a {
+  color: var(--color-fondo);
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18pt;
+  text-decoration: none;
+}
+.food-section {
+  margin: 15px;
+  max-width: 500px;
+}
+.polygon-title {
+  width: fit-content;
+  margin-left: 20px;
+  padding: 20px 25px;
+  color: var(--color-fondo);
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 28pt;
+  letter-spacing: 2px;
+}
+.burgers {
+  margin-top: 80px;
+  background-color: #f2bb05;
+  clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+}
+.hotdogs {
+  background: #d74e09;
+  clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
+}
+.postres {
+  margin-top: 80px;
+  background: darkcyan;
+  clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
+}
+.bebidas {
+  margin-top: 80px;
+  background-color: darkseagreen;
+  clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+}
+.plate {
+  margin: 20px;
+}
+.tittle {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(40, 40, 40);
+}
+.tittle h3 {
+  margin: 0;
+}
+.description {
+  width: 80%;
+  font-weight: 300;
+  margin: 0;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-fondo);
+  z-index: 100;
+  max-width: 100vw;
+}
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.modal img {
+  display: block;
+  width: 90vw;
+  margin: 0 auto;
+}
+.modal p {
+  margin: 20px;
+  
+}
+#home-page {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  width: 100dvw;
+  height: 100dvh;
+  margin: 0;
+  padding: 0;
+  background-image: url("./assets/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#home-page h1 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 28pt;
+}
+#redes-sociales {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 5%;
+}
+#redes-sociales svg {
+  width: 40px;
+  height: 40px;
+  margin-right: 30px;
+  color: whitesmoke;
+}
+#redes-sociales svg:last-child{
+  margin-right: 0;
+}
+.botonera {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+}
+.botonera a {
+  cursor: pointer;
+  letter-spacing: 4px;
+  width: 200px;
+  height: 50px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 18pt;
+  font-weight: 600;
+  color: white;
+  background-color: rgb(0, 139, 139);
+  border: solid 1px white;
+}
+#pseudologo {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  margin-top: 0;
+}
