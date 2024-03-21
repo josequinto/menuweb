@@ -9,7 +9,7 @@ export default function Home() {
       <h1 id="pseudologo">My Restaurant</h1>
       <div className="botonera">
         <Link to="/food">Menú</Link>
-        <Link to="/">Quiz</Link>
+        <Link to="/">Trivia!</Link>
       </div>
       <div id="redes-sociales">
         <ImWhatsapp />
